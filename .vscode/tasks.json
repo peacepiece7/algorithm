@@ -10,7 +10,7 @@
     {
       "label": "save and compile for C++",
       "command": "g++",
-      "args": ["${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}"],
+      "args": ["${file}","-o", "${fileDirname}/${fileBasenameNoExtension}"],
       "group": "build",
       "problemMatcher": {
         "fileLocation": ["relative", "${workspaceRoot}"],
