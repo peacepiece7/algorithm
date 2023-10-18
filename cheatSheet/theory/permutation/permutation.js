@@ -9,8 +9,8 @@
 // {1,2,3}중 두 개를 뽑는 조합
 // {1,2}, {2,3}, {3,1}
 
-const v = [1,2,3]
-const r=2
+const v = [2, 1, 3, 100, 200]
+const r=5
 
 const swap = (arr, a, b) => {
     const temp = arr[a]
@@ -21,18 +21,14 @@ const swap = (arr, a, b) => {
 const makePermutation = (n,r,depth) => {
     if(r == depth) {
         // * logic
-        console.log(v.slice(0,r));
+        console.log(v.join(" "))
         return
     }
     for(let i=depth; i<n; i++) {
-        console.log(i, depth)
-        // swap(v, i, depth)
-        [v[i], v[depth]] = [v[depth], v[i]]
+        swap(v, i, depth)
         makePermutation(n,r,depth+1)
-        [v[i], v[depth]] = [v[depth], v[i]]
-
-        // swap(v, i, depth)
+        swap(v, i, depth)
     }
 }
-
+v.sort((a,b) => a - b)
 makePermutation(v.length,r,0)
