@@ -34,6 +34,5 @@ void matrix() {
   memcpy(&mat1, &mat2, sizeof(mat1));
   std::vector<int> vec = {1, 2, 3};
   std::array<int, 5> arr = {1, 2, 3, 4, 5};
-  std::cout << sizeof(vec) << std::endl;
-  std::cout << vec.size() << std::endl;
+  std::cout << sizeof(vec) / sizeof(int) << std::endl;
 }
