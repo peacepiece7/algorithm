@@ -1,6 +1,8 @@
 {
   // 기본 포매터를 정의합니다.
-  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 
   // 저장할 때 코드를 포매팅합니다.
   "editor.formatOnSave": true,
