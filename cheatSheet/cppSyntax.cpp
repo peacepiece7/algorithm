@@ -19,6 +19,7 @@ int main() {
   strcmp(str1, str2);                                         // 1
   strcmp(str1, str1);                                         // 0
   strlen(str1);                                               // 3
+  std::reverse(str1, str1 + strlen(str1));                    // oof
 
   // * ASCII
   char a = 'a';
